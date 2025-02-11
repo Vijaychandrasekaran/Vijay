@@ -21,7 +21,7 @@ jobs:
             
         - name: Text file exists 
           run: 
-            grep | -i dragon.txt
+            grep | -i "dragon" dragon.txt
 
         - name : list files
           run: 
