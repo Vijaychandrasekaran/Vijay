@@ -14,5 +14,10 @@ jobs:
         - name: Read file
           run: 
             echo "Reading file"
-            ls -ltra
-            cat README.md
+    
+        - name : list files
+          run: 
+            ls
+        
+        - name: Catalog files
+          run: cat README.md
