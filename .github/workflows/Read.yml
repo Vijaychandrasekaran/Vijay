@@ -1,0 +1,18 @@
+name: Checkout first file 
+
+on: 
+   push
+   
+    
+jobs:
+    first_job 
+       runs-on: ubuntu-latest
+        steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v4
+
+        - name: Read file
+          run: 
+            echo "Reading file"
+            ls -ltra
+            cat README.md
