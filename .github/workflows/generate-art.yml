@@ -15,4 +15,6 @@ jobs:
           run: |
             chmod +x ascii-script.sh
             ./ascii-script.sh
-    
+
+        - name: list files in the directory
+          run: ls -l    
